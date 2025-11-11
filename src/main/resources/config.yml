@@ -1,0 +1,42 @@
+format:
+  prefix: '[Inevitable]'
+  placeholder-format: '<%ph>'
+
+# The notification to all players when a player joins
+# comment out/remove to remove it
+# Listable; can be String or List
+join-message: '&e<player> joined the game'
+
+# The notification to all players when a player leaves the game
+# comment out/remove to remove it
+# Listable; can be String or List
+quit-message: '&e<player> left the game'
+
+# An action section which is executed when a player joins
+# Executor: player who joined
+on-join:
+  message: 'Welcome to the server!'
+  commands: 'title <player> actionbar §aWelcome'
+
+# An action section which is executed when a player leaves the game
+# Executor: player who left the game
+on-quit: {}
+
+# An example of an action section
+
+action-section:
+  message: ''
+  commands: []
+  broadcast: ''
+  actionbar: ''
+  title:
+    title: ''
+    subtitle: ''
+    times:
+      fade-in:
+        value: 1
+        type: TICKS
+      duration:
+        value: 3
+        type: SECONDS
+      fade-out: 1 # def type is SECONDS

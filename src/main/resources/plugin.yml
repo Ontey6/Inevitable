@@ -1,0 +1,7 @@
+name: Inevitable
+version: '1.0'
+main: com.ontey.Main
+api-version: '1.21'
+authors: [ Ontey ]
+
+soft-depend: [PlaceholderAPI]

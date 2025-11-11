@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Inevitable:jar">
+    <output-path>$USER_HOME$/Documents/Minecraft/Servers/TestServer/plugins</output-path>
+    <root id="archive" name="Inevitable.jar" />
+  </artifact>
+</component>
