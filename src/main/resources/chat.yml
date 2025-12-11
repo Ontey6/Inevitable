@@ -1,0 +1,9 @@
+enabled: false
+
+# The chat format
+# Variables:
+# player - The player's name.
+# player.display-name - The player's display name.
+# recipient - The name of the player/console who received the message. "console" for consoles
+# message - The message.
+format: '&7[<suggest:"/msg <player>">&f<player.display-name>&7</suggest>]&f <message>'

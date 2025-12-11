@@ -4,13 +4,13 @@ import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.minimessage.MiniMessage;
 
 public class Color {
-   private static MiniMessage mm = MiniMessage.miniMessage();
+   public static final MiniMessage mm = MiniMessage.miniMessage();
    
    public static Component colorize(String msg) {
-      return mm.deserialize(replace(msg));
+      return mm.deserialize(plainColorize(msg));
    }
    
-   public static String replace(String str) {
+   public static String plainColorize(String str) {
       if(str == null)
          return "";
       

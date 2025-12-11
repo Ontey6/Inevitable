@@ -1,6 +1,6 @@
 tasks.register('copyToServer', Copy) {
     doNotTrackState("")
-    from layout.buildDirectory.file("libs/${project.name}-${project.version}-dev.jar")
+    from layout.buildDirectory.file("libs/${project.name}-${project.version}.jar")
     into "C:/Users/klett/Documents/Minecraft/Servers/TestServer/plugins"
 }
 build.finalizedBy(copyToServer)

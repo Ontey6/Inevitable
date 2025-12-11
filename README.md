@@ -1,5 +1,5 @@
 # Inevitable
-An essential-like plugin that focuses on being modular
+An essential-like plugin that focuses on being modular and modern
 
 ---
 
@@ -9,10 +9,10 @@ this plugin is still under development
 ---
 
 ## 📦 Features
-- Custom Join/Quit messages
+- Custom Join/Quit messages & actions
 - **NOTE:** all commands are fully customizable and modular
 - Commands for opening utility blocks _(e.g. Crafting Table, Loom...)_
-- Fly command
+- and many more commands...
 
 ---
 
@@ -122,9 +122,10 @@ or if you want to reset the command to its defaults, delete it and restart / rel
 ---
 
 ## 🪪 Permissions
-| Permission                    | Default | Description                                                  |
-|-------------------------------|---------|--------------------------------------------------------------|
-| inevitable.command.\<command> | op      | Grants access to that command (customizable in commands.yml) |
+| Permission                           | Default | Description                                                                                             |
+|--------------------------------------|---------|---------------------------------------------------------------------------------------------------------|
+| inevitable.command.\<command>        | op      | Grants access to that command (customizable in commands.yml)                                            |
+| inevitable.command.\<command>.target | op      | makes the player able to target other players with that command (needs to be a TargetableConfigCommand) |
 
 ---
 
@@ -135,7 +136,7 @@ Open an [issue](https://github.com/Ontey6/Inevitable/issues) for bugs or feature
 
 ## 🧑‍💻 Developers
 - **Author:** Ontey
-- **Contributors:** You are always welcome to contribute, but use indents of 3
+- **Contributors:** You are always welcome to contribute
 
 ---
 
@@ -155,17 +156,17 @@ merge, publish, or share the Software. You may also make and use your
 own versions of it, as long as you follow these rules:
 
 1. Rules for sharing this Software
-    - Do not use it for anything illegal.
-    - You are not allowed to sell the Software itself.
-    - You are not allowed to use it on Minecraft servers with sexual content.
-    - You must always give credit to the original author (Ontey).
-    - You may not rename or claim the Software as your own.
-      (Modifications and new features are allowed, but authorship must stay clear.)
+   - Do not use it for anything illegal.
+   - You are not allowed to sell the Software itself.
+   - You are not allowed to use it on Minecraft servers with sexual content.
+   - You must always give credit to the original author (Ontey).
+   - You may not rename or claim the Software as your own.
+     (Modifications and new features are allowed, but authorship must stay clear.)
 
 2. Rules for using this Software
-    - Do not use it on cracked (non-official) Minecraft servers.
-    - Do not use it in ways that Mojang says are not allowed.
-    - You are allowed to use the Software commercially (for example on paid servers or servers that accept donations).
+   - Do not use it on cracked (non-official) Minecraft servers.
+   - Do not use it in ways that Mojang says are not allowed.
+   - You are allowed to use the Software commercially (for example on paid servers or servers that accept donations).
 
 This permission notice and the copyright notice above must be included in
 all copies or large parts of the Software.
@@ -176,8 +177,3 @@ ARE NOT RESPONSIBLE FOR ANY PROBLEMS, DAMAGES, OR LOSSES THAT MAY HAPPEN
 FROM USING THE SOFTWARE.
 
 </details>
-
----
-
-## 💬 Example
-Include a screenshot, command output, or config snippet here.

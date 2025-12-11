@@ -1,0 +1,29 @@
+# An action section which is executed when a player joins.
+# turn off by emptying the section.
+# Executor: player who joined
+on-join:
+  message: 'Welcome back to the server!'
+  actionbar: '&aWelcome back'
+
+# An action section which is executed when a player leaves the game.
+# turn off by emptying the section.
+# Executor: player who left the game
+on-quit: {}
+
+# An example of an action section
+action-section:
+  message: ''
+  commands: []
+  broadcast: ''
+  actionbar: ''
+  title:
+    title: ''
+    subtitle: ''
+    times:
+      fade-in:
+        value: 1
+        type: TICKS
+      duration:
+        value: 3
+        type: SECONDS
+      fade-out: 1 # def type is SECONDS

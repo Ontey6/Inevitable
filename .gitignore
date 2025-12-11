@@ -1,3 +1,5 @@
 .gradle
 build
 local.gradle
+CHANGELOG.md
+TODO.md

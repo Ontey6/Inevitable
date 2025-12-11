@@ -13,8 +13,9 @@ import org.jetbrains.annotations.Nullable;
 import java.time.Duration;
 import java.util.List;
 
-import static com.ontey.files.Files.*;
-import static com.ontey.formatting.Format.format;
+import static com.ontey.api.files.Files.*;
+import static com.ontey.inevitable.formatting.Format.format;
+import static com.ontey.inevitable.formatting.Format.plainFormat;
 
 @AllArgsConstructor
 public class ActionSection {
@@ -81,7 +82,7 @@ public class ActionSection {
          player.sendActionBar(format(actionbar, player));
       
       for(String cmd : commands)
-         player.performCommand(cmd);
+         player.performCommand(plainFormat(cmd, player));
    }
    
    private void sendTitle(Player p) {

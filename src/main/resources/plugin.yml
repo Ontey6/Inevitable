@@ -1,6 +1,6 @@
 name: Inevitable
-version: '1.0'
-main: com.ontey.Main
+version: 1.1-alpha
+main: com.ontey.inevitable.Main
 api-version: '1.21'
 authors: [ Ontey ]
 
