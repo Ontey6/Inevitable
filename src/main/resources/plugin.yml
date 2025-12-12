@@ -2,6 +2,6 @@ name: Inevitable
 version: 1.1
 main: com.ontey.inevitable.Main
 api-version: '1.21'
-authors: [ Ontey ]
+authors: [Ontey]
 
 soft-depend: [PlaceholderAPI]

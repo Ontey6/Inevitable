@@ -30,7 +30,9 @@ public class EnderchestCommand {
           .then(
             Arg.playerArg("holder")
               .executes(ctx -> Arg.requirePlayer(ctx, cmd.options, p -> {
-                 try { openEnderchest(Arg.getPlayer("holder", ctx), p); } catch(CommandSyntaxException e) { }
+                 try {
+                    openEnderchest(Arg.getPlayer("holder", ctx), p);
+                 } catch(CommandSyntaxException e) { }
               }))
               .requires(src ->
                 src.getSender()

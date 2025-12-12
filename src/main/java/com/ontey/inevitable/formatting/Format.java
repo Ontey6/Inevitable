@@ -1,6 +1,7 @@
 package com.ontey.inevitable.formatting;
 
 import com.ontey.api.color.Color;
+import com.ontey.inevitable.hooks.Hooks;
 import me.clip.placeholderapi.PlaceholderAPI;
 import net.kyori.adventure.text.Component;
 import org.bukkit.entity.Player;
@@ -16,7 +17,8 @@ public class Format {
    
    public static String plainFormat(String str, Player player) {
       str = Holder.apply(str, player);
-      str = PlaceholderAPI.setPlaceholders(player, str);
+      if(Hooks.PLACEHOLDER_API)
+         str = PlaceholderAPI.setPlaceholders(player, str);
       
       return str;
    }
