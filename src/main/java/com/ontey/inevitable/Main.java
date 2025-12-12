@@ -13,7 +13,7 @@ public final class Main extends JavaPlugin {
    public static Main plugin;
    public static PluginManager pm;
    
-   public static final String version = "1.1-alpha";
+   public static final String version = "1.1";
    public static final int debugSnapshot = 1;
    public static final String debugVersion = version + "$" + debugSnapshot;
    
