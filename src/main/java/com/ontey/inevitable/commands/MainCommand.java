@@ -1,10 +1,10 @@
 package com.ontey.inevitable.commands;
 
 import com.ontey.inevitable.Main;
-import com.ontey.api.brigadier.argument.Arg;
-import com.ontey.api.brigadier.command.ConfigCommand;
-import com.ontey.api.brigadier.config.CommandConfiguration;
-import com.ontey.api.brigadier.registry.CommandRegistry;
+import com.ontey.inevitable.api.brigadier.argument.Arg;
+import com.ontey.inevitable.api.brigadier.command.ConfigCommand;
+import com.ontey.inevitable.api.brigadier.config.CommandConfiguration;
+import com.ontey.inevitable.api.brigadier.registry.CommandRegistry;
 import com.ontey.inevitable.files.Commands;
 import com.ontey.inevitable.files.Config;
 import org.bukkit.command.CommandSender;
@@ -12,8 +12,8 @@ import org.bukkit.command.CommandSender;
 import java.util.List;
 import java.util.Map;
 
-import static com.ontey.api.brigadier.command.Command.SUCCESS;
-import static com.ontey.api.color.Color.colorize;
+import static com.ontey.inevitable.api.brigadier.command.Command.SUCCESS;
+import static com.ontey.inevitable.api.color.Color.colorize;
 
 public class MainCommand {
    

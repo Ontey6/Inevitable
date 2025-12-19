@@ -1,7 +1,7 @@
 package com.ontey.inevitable.files;
 
 import com.ontey.inevitable.Main;
-import com.ontey.api.log.Log;
+import com.ontey.inevitable.api.log.Log;
 import com.ontey.inevitable.commands.*;
 import com.ontey.inevitable.commands.*;
 import com.ontey.inevitable.commands.GuiCommands.*;

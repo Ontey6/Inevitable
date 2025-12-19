@@ -1,29 +1,17 @@
 package com.ontey.inevitable.formatting;
 
+import com.ontey.inevitable.api.variable.VariableFormat;
 import com.ontey.inevitable.files.Config;
+import lombok.AllArgsConstructor;
 
-import java.util.regex.Pattern;
-
+@AllArgsConstructor
 public class Variable {
    
-   public String name, replacement, format;
+   public final String name;
    
-   private Variable(String name, String replacement, String format) {
-      this.name = name;
-      this.replacement = replacement;
-      this.format = format;
-   }
+   public final VariableFormat format;
    
-   // for extendability (e.g. normal variables)
-   
-   public static Variable ph(String name, String replacement) {
-      return new Variable(name, replacement, Config.PLACEHOLDER_FORMAT);
-   }
-   
-   public String apply(String str) {
-      String formatted = format.replace("%ph", name);
-      return str
-        .replaceAll("(?<!\\\\)" + Pattern.quote(formatted), replacement)
-        .replace("\\" + formatted, formatted);
+   public static String phFormat(String name) {
+      return Config.PLACEHOLDER_FORMAT.format(name);
    }
 }

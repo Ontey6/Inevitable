@@ -1,6 +1,6 @@
 package com.ontey.inevitable.formatting;
 
-import com.ontey.api.color.Color;
+import com.ontey.inevitable.api.color.Color;
 import com.ontey.inevitable.hooks.Hooks;
 import me.clip.placeholderapi.PlaceholderAPI;
 import net.kyori.adventure.text.Component;

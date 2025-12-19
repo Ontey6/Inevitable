@@ -1,7 +1,7 @@
 package com.ontey.inevitable.commands;
 
-import com.ontey.api.brigadier.command.TargetableConfigCommand;
-import com.ontey.api.brigadier.config.CommandConfiguration;
+import com.ontey.inevitable.api.brigadier.command.TargetableConfigCommand;
+import com.ontey.inevitable.api.brigadier.config.CommandConfiguration;
 
 import java.util.List;
 import java.util.Map;

@@ -1,8 +1,8 @@
 package com.ontey.inevitable.files;
 
 import com.ontey.inevitable.Main;
-import com.ontey.api.files.Files;
-import com.ontey.api.log.Log;
+import com.ontey.inevitable.api.files.Files;
+import com.ontey.inevitable.api.log.Log;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.jetbrains.annotations.Contract;

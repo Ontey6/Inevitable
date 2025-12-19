@@ -1,8 +1,9 @@
 package com.ontey.inevitable.files;
 
 import com.ontey.inevitable.Main;
-import com.ontey.api.files.Files;
-import com.ontey.api.log.Log;
+import com.ontey.inevitable.api.files.Files;
+import com.ontey.inevitable.api.log.Log;
+import com.ontey.inevitable.api.variable.VariableFormat;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.jetbrains.annotations.Contract;
@@ -96,12 +97,12 @@ public class Config {
    // Fields
    
    private static void loadFields() {
-      PLACEHOLDER_FORMAT = getOrDefault("format.placeholder-format", "<%ph>");
+      PLACEHOLDER_FORMAT = new VariableFormat(getOrDefault("format.placeholder-format", "<%ph>"), "%ph");
       DEBUG = getOrDefault("debug", false);
    }
    
    public static final String PREFIX = "[Inevitable]";
-   public static String PLACEHOLDER_FORMAT;
+   public static VariableFormat PLACEHOLDER_FORMAT;
    
    public static boolean DEBUG;
 }

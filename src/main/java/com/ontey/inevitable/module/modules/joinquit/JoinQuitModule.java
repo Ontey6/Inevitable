@@ -1,6 +1,6 @@
 package com.ontey.inevitable.module.modules.joinquit;
 
-import com.ontey.api.actionsection.ActionSection;
+import com.ontey.inevitable.api.actionsection.ActionSection;
 import com.ontey.inevitable.Main;
 import com.ontey.inevitable.files.Config;
 import com.ontey.inevitable.files.EventsFile;

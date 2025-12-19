@@ -4,4 +4,4 @@ main: com.ontey.inevitable.Main
 api-version: '1.21'
 authors: [Ontey]
 
-soft-depend: [PlaceholderAPI]
+soft-depend: [PlaceholderAPI, Vault]

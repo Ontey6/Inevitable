@@ -1,15 +1,15 @@
 package com.ontey.inevitable.commands;
 
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
-import com.ontey.api.brigadier.argument.Arg;
-import com.ontey.api.brigadier.command.ConfigCommand;
-import com.ontey.api.brigadier.config.CommandConfiguration;
+import com.ontey.inevitable.api.brigadier.argument.Arg;
+import com.ontey.inevitable.api.brigadier.command.ConfigCommand;
+import com.ontey.inevitable.api.brigadier.config.CommandConfiguration;
 import org.bukkit.entity.Player;
 
 import java.util.List;
 import java.util.Map;
 
-import static com.ontey.api.brigadier.command.Command.SUCCESS;
+import static com.ontey.inevitable.api.brigadier.command.Command.SUCCESS;
 
 public class EnderchestCommand {
    

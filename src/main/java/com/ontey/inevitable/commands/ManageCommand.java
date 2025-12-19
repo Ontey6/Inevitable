@@ -2,10 +2,10 @@ package com.ontey.inevitable.commands;
 
 import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
-import com.ontey.api.brigadier.argument.Arg;
-import com.ontey.api.brigadier.command.ConfigCommand;
-import com.ontey.api.brigadier.config.CommandConfiguration;
-import com.ontey.api.brigadier.config.CommandOptions;
+import com.ontey.inevitable.api.brigadier.argument.Arg;
+import com.ontey.inevitable.api.brigadier.command.ConfigCommand;
+import com.ontey.inevitable.api.brigadier.config.CommandConfiguration;
+import com.ontey.inevitable.api.brigadier.config.CommandOptions;
 import io.papermc.paper.command.brigadier.CommandSourceStack;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -15,7 +15,7 @@ import java.util.Map;
 import java.util.function.BiConsumer;
 import java.util.function.Function;
 
-import static com.ontey.api.brigadier.command.Command.SUCCESS;
+import static com.ontey.inevitable.api.brigadier.command.Command.SUCCESS;
 import static com.ontey.inevitable.formatting.Format.format;
 
 public class ManageCommand {

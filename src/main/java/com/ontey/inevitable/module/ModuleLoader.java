@@ -1,8 +1,8 @@
 package com.ontey.inevitable.module;
 
-import com.ontey.inevitable.annotationfinder.AnnotationFinder;
-import com.ontey.api.color.JavaColor;
-import com.ontey.api.log.Log;
+import com.ontey.inevitable.api.classfilterer.ClassFilterer;
+import com.ontey.inevitable.api.color.JavaColor;
+import com.ontey.inevitable.api.log.Log;
 import com.ontey.inevitable.Main;
 
 import java.lang.reflect.InvocationTargetException;
@@ -15,7 +15,7 @@ public final class ModuleLoader {
       Log.info(JavaColor.colorize("&7------------------&r Starting Module Loader &7------------------"));
       Log.info("");
       
-      AnnotationFinder
+      ClassFilterer
         .find(Main.class, "com.ontey.inevitable.module.modules", Module.class)
         .forEach(ModuleLoader::loadModule);
       

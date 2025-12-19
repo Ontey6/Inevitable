@@ -10,14 +10,14 @@ import java.util.List;
 import java.util.function.Supplier;
 
 public class Holder {
-   private static final List<Variable> variables = new ArrayList<>();
+   private static final List<Placeholder> PLACEHOLDERS = new ArrayList<>();
    
    private static void load(Player p, boolean extended) {
-      variables.clear();
+      PLACEHOLDERS.clear();
       
       // basic placeholders
       
-      variables.addAll(List.of(
+      PLACEHOLDERS.addAll(List.of(
         ph("player.name", p.getName()),
         ph("player", p.getName())
       ));
@@ -28,7 +28,7 @@ public class Holder {
       // extended placeholders
       
       //noinspection DataFlowIssue
-      variables.addAll(List.of(
+      PLACEHOLDERS.addAll(List.of(
         ph("player.isOp", p.isOp()),
         ph("player.isSleeping", p.isSleeping()),
         ph("player.hasEmptyInventory", p.getInventory().isEmpty()),
@@ -70,7 +70,7 @@ public class Holder {
    public static String apply(String str, Player player) {
       load(player, true);
       
-      for(var var : variables)
+      for(var var : PLACEHOLDERS)
          str = var.apply(str);
       
       return str;
@@ -79,7 +79,7 @@ public class Holder {
    public static String applyMinimal(String str, Player player) {
       load(player, false);
       
-      for(var var : variables)
+      for(var var : PLACEHOLDERS)
          str = var.apply(str);
       
       return str;
@@ -111,7 +111,7 @@ public class Holder {
       return out.isEmpty() ? "" : out.substring(delimiter.length());
    }
    
-   private static Variable ph(String name, Object value) {
-      return Variable.ph(name, String.valueOf(value));
+   private static Placeholder ph(String name, Object value) {
+      return Placeholder.ph(name, String.valueOf(value));
    }
 }

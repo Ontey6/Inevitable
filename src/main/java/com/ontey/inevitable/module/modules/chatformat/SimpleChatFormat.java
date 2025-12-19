@@ -1,7 +1,7 @@
 package com.ontey.inevitable.module.modules.chatformat;
 
-import com.ontey.api.color.Color;
-import com.ontey.inevitable.formatting.Variable;
+import com.ontey.inevitable.api.color.Color;
+import com.ontey.inevitable.formatting.Placeholder;
 import net.kyori.adventure.audience.Audience;
 import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer;
@@ -15,11 +15,11 @@ import static com.ontey.inevitable.module.modules.chatformat.ChatFormatModule.fo
 public class SimpleChatFormat {
    
    public Component apply(Player sender, Component senderDisplayName, Audience recipient, Component message) {
-      final List<Variable> vars = List.of(
-        Variable.ph("player", sender.getName()),
-        Variable.ph("player.display-name", str(senderDisplayName)),
-        Variable.ph("recipient", recipient instanceof Player p ? p.getName() : "console"),
-        Variable.ph("message", PlainTextComponentSerializer.plainText().serialize(message))
+      final List<Placeholder> vars = List.of(
+        Placeholder.ph("player", sender.getName()),
+        Placeholder.ph("player.display-name", str(senderDisplayName)),
+        Placeholder.ph("recipient", recipient instanceof Player p ? p.getName() : "console"),
+        Placeholder.ph("message", PlainTextComponentSerializer.plainText().serialize(message))
       );
       
       String out = format;
