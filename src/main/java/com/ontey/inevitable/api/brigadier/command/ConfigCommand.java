@@ -58,7 +58,10 @@ public class ConfigCommand extends Command {
       if(values.names().isEmpty())
          return this;
       
-      final LiteralCommandNode<CommandSourceStack> node = new LiteralCommandNode<>(
+      root
+        .requires(source -> permission == null || source.getSender().hasPermission(permission));
+      
+      LiteralCommandNode<CommandSourceStack> node = new LiteralCommandNode<>(
         values.names().getFirst(),
         root.getCommand(),
         root.getRequirement(),
